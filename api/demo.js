@@ -103,4 +103,20 @@ module.exports = (app) => {
             return res.status(500).send({message: "an error occured", status: 500}); 
         }
     })
+
+    app.put('/PutArticle', (req,res) => {
+        console.log(req.body._id);
+        console.log(req.body);
+        try {
+            if (!req.body) throw "body empty";
+            if (!json.users[req.body._id]) throw "Id not found !";
+            console.log(req);
+            articleJson['Articles'][req.body._id]['name'] = req.body['name'];
+            articleJson['Articles'][req.body._id]['prix'] = req.body['prix'];
+            return res.status(200).send(json.users[req.params.id]);            
+        } catch (err) {
+            console.error(err)
+            return res.status(500).send({message: "an error occured", status: 500}); 
+        }
+    })
 }

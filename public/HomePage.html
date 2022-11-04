@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API - Post one Article </title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="./main.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script defer src="./index.js"></script>
@@ -16,21 +16,14 @@
             <li><a href="article_Get_One.html">Get One</a></li>
             <li><a href="article_Get_All.html">Get All</a></li>
             <li><a href="article_Post_One.html">Post One</a></li>
-            <li><a href="article_Put_One.html">Put One</a></li>
         </ul>
-    </div> 
-    <div class="container">
-        <div class="cols mb-md">
-            <h1>Post One article</h1>
-            <p>Faire une requête Post avec Axios pour Poster un nouveau Article.</p>
-        </div>
-        <div class="cols mb-md">
-            <input class="inpt" type="text" id="name" name="name" placeholder="post name here">
-            <input class="inpt" type="number" id="price" name="price" placeholder="post price here">
-            <button class="btn prm" onclick="handleClickPost('PostArticle')">Post</button>
-        </div>
-        <div class="cols">
-        </div>
     </div>
+    <div id="resume">
+        <p>L'objectif de ce projet est de créer une API via Java Script</p>
+        <p>Grace à la bare de navigation vous pouvez utiliser 3 requêtes différentes</p>
+        <p>Le Get One : Il permet de récuper les inofrmations d'un article via son ID</p>
+        <p>Le Get All : Il permet de récuper les inofrmations de tous les articles</p>
+        <p>Le Post One : Il permet de poster un nouveau article en lui donnant un nom et un prix</p>
+    </div> 
 </body>
 </html>

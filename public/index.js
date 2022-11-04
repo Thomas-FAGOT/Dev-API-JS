@@ -15,9 +15,13 @@ function handleClickPut(route) {
 // Code here     
     let url = "http://localhost:3000/" + route;
     let el = document.getElementById("api-rawRes");
+    let _id = document.getElementById("_id").value;
     let name = document.getElementById("name").value;
+    let price = document.getElementById("price").value;
     let arrayDataName = {
-        "name": name
+        "name": name,
+        "prix": price,
+        "_id": _id,
     };
 
     axios.put(url, arrayDataName).then((res) =>{

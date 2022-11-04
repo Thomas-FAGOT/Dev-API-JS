@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API - Post one Article </title>
+    <title>API - Put one Article </title>
     <link rel="stylesheet" href="./main.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script defer src="./index.js"></script>
@@ -21,13 +21,14 @@
     </div> 
     <div class="container">
         <div class="cols mb-md">
-            <h1>Post One article</h1>
-            <p>Faire une requête Post avec Axios pour Poster un nouveau Article.</p>
+            <h1>Put One article</h1>
+            <p>Faire une requête Put avec Axios pour modifier un Article.</p>
         </div>
         <div class="cols mb-md">
-            <input class="inpt" type="text" id="name" name="name" placeholder="post name here">
-            <input class="inpt" type="number" id="price" name="price" placeholder="post price here">
-            <button class="btn prm" onclick="handleClickPost('PostArticle')">Post</button>
+            <input class="inpt" type="number" id="_id" name="_id" placeholder="put id here">
+            <input class="inpt" type="text" id="name" name="name" placeholder="put name here">
+            <input class="inpt" type="number" id="price" name="price" placeholder="put price here">
+            <button class="btn prm" onclick="handleClickPut('PutArticle')">Update</button>
         </div>
         <div class="cols">
         </div>
