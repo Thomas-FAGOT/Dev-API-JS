@@ -1,0 +1,17 @@
+{
+    "Articles":[
+        {
+            "name": "chaise",
+            "prix": 5,
+            "_id": 0
+        }, {
+            "name": "table",
+            "prix": 10,
+            "_id": 1
+        }, {
+            "name": "tabouret",
+            "prix": 2,
+            "_id": 2
+        }
+    ]
+}

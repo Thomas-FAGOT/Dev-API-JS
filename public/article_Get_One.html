@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API - Get one Article </title>
+
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="cols mb-md">
+            <h1>Get One article</h1>
+            <p>Faire une requête GET avec Axios pour récuper un Article.</p>
+        </div>
+        <div class="cols mb-md">
+            <div class="inpt">
+                <div id="api-rawRes"></div>
+            </div>
+        </div>
+        <div class="cols mb-md">
+            <button class="btn prm" onclick="handleClick('OneArticle/1')">Get</button>
+        </div>
+        <div class="cols">
+            <a class="btn scnd" href="./article_Get_All.html">Article Get All</a>
+            <a class="btn scnd" href="./article_Post_One.html">Article Post One</a>
+        </div>
+    </div>
+</body>
+</html>
